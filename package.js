@@ -10,10 +10,10 @@ server = 'server';
 client = 'client';
 
 Package.onUse(function (api) {
-  api.versionsFrom('1.8.1');
+  api.versionsFrom('2.5');
 
-  api.add_files('lib/util-client.js', client);
-  api.add_files('lib/util-server.js', server);
+  api.addFiles('lib/util-client.js', client);
+  api.addFiles('lib/util-server.js', server);
 
   api.export('Util');
 });
